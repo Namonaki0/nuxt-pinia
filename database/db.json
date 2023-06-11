@@ -1,4 +1,38 @@
 {
+  "cart": [
+    {  
+      "title": "Lava Potion",
+      "price": 20,
+      "description": "Gain heat resistance for 3 minutes.",
+      "img": "/img/potion.png",
+      "id": 1,
+      "quantity": 1
+    },
+    {
+      "title": "Poison Hammer",
+      "price": 100,
+      "description": "Hammer infused with posion gem magic.",
+      "img": "/img/hammer.png",
+      "id": 2,
+      "quantity": 1
+    },
+    {
+      "title": "Sun Shield",
+      "price": 50,
+      "description": "Shield passed down the by tribe of Ancients.",
+      "img": "/img/shield.png",
+      "id": 3,
+      "quantity": 1
+    },
+    {
+      "title": "Ring of Fortitude",
+      "price": 75,
+      "description": "Casts a magic protection barrier.",
+      "img": "/img/ring.png",
+      "id": 4,
+      "quantity": 1
+    }
+  ],
   "products": [
     {  
       "title": "Lava Potion",

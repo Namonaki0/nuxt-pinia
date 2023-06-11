@@ -17,5 +17,7 @@
 <script setup>
     // fetch products
     import ProductCard from '@/components/ProductCard.vue'
+
     const { data: products } = await useFetch('http://localhost:3000/products');
+    
 </script>
