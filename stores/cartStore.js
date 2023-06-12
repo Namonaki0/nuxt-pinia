@@ -6,9 +6,8 @@ export const useCartStore = defineStore("cart", {
   }),
   actions: {
     async getCartData() {
-      const data = await $fetch("http://localhost:3001/cart");
+      const data = await $fetch("http://localhost:3000/cart");
       this.cart = data;
-      //   console.log(this.cart);
     },
   },
   getters: {},
