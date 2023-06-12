@@ -6,6 +6,7 @@
             v-if="cartStore.cart.length"
             class="card text-xl"
         >
+        <!-- product list -->
             <div
                 v-for="product in cartStore.cart"
                 :key="product.id"
@@ -15,7 +16,13 @@
                 <p class="text-white">{{ product.title }}</p>
                 <p class="text-white">{{ product.price * product.quantity }} coins</p>
             </div>
+            <!-- cart total -->
+            <div class="text-right pt-4 mt-4 border-t-2">
+                <span class="text-white">Total amount to pay: </span>
+                <span class="text-secondary">{{ cartStore.cartTotal }}</span>
+            </div>
         </div>
+
         <div
             v-else
         >
