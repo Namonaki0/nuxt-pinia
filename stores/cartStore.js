@@ -24,5 +24,20 @@ export const useCartStore = defineStore("cart", {
         method: "DELETE",
       });
     },
+    async increaseItemCount(product) {
+      let updatedProduct;
+
+      this.cart = this.cart.map((prod) => {
+        if (prod.id === product.id) {
+          prod.quantity++;
+          updatedProduct = prod;
+        }
+        return prod;
+      });
+      await $fetch(`http://localhost:3000/cart/${product.id}`, {
+        method: "PUT",
+        body: JSON.stringify(updatedProduct),
+      });
+    },
   },
 });
