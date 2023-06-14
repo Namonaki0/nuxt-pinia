@@ -9,13 +9,15 @@
                 class="btn"
                 @click.stop="addToCart()"
             >
-                <span>Add to basket</span>
+                <span v-if="isPending">Adding...</span>
+                <span v-else>Add to basket</span>
             </button>
         </div>
     </div>
 </template>
 <script setup>
 import { useCartStore } from '@/stores/cartStore';
+import { ref } from "vue"
 
 const cartStore = useCartStore();
 
@@ -26,7 +28,11 @@ const props = defineProps({
     }
 })
 
+const isPending = ref(false)
+
 const addToCart = async () => {
+    isPending.value = true
     await cartStore.addItemToCart(props.product)
+    isPending.value = false
 }
 </script>
