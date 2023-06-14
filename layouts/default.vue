@@ -1,11 +1,3 @@
-<script setup>
-    import { useCartStore } from "@/stores/cartStore"
-
-    const cartStore = useCartStore()
-
-    cartStore.getCartData()
-</script>
-
 <template>
     <div class="m-8">
         <header class="wrapper flex justify-between">
@@ -23,3 +15,10 @@
         </div>
     </div>
 </template>
+<script setup>
+import { useCartStore } from "@/stores/cartStore"
+
+const cartStore = useCartStore()
+
+cartStore.getCartData()
+</script>

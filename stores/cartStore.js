@@ -56,5 +56,19 @@ export const useCartStore = defineStore("cart", {
         });
       }
     },
+    async addItemToCart(product) {
+      const productExists = this.cart.find((prod) => prod.id === product.id);
+
+      if (productExists) {
+        this.increaseItemCount(product);
+      } else {
+        this.cart.push({ ...product, quantity: 1 });
+
+        await $fetch("http://localhost:3000/cart", {
+          method: "POST",
+          body: JSON.stringify({ ...product, quantity: 1 }),
+        });
+      }
+    },
   },
 });
