@@ -6,7 +6,7 @@
       "description": "Summon the undead to aid in battle.",
       "img": "/img/book.png",
       "id": 6,
-      "quantity": 1
+      "quantity": 3
     },
     {
       "title": "Crystal Sword",
@@ -14,7 +14,7 @@
       "description": "Sharp sword the can cut through armour.",
       "img": "/img/sword.png",
       "id": 5,
-      "quantity": 3
+      "quantity": 7
     },
     {
       "title": "Lava Potion",
@@ -22,7 +22,7 @@
       "description": "Gain heat resistance for 3 minutes.",
       "img": "/img/potion.png",
       "id": 1,
-      "quantity": 2
+      "quantity": 3
     },
     {
       "title": "Ring of Fortitude",
@@ -30,7 +30,7 @@
       "description": "Casts a magic protection barrier.",
       "img": "/img/ring.png",
       "id": 4,
-      "quantity": 1
+      "quantity": 2
     },
     {
       "title": "Exploding Gem",
@@ -38,7 +38,7 @@
       "description": "Throw at the ground to explode.",
       "img": "/img/gem.png",
       "id": 10,
-      "quantity": 1
+      "quantity": 2
     },
     {
       "title": "Healing Crystal",
@@ -46,7 +46,7 @@
       "description": "Makes the owner immune to poison.",
       "img": "/img/crystal.png",
       "id": 7,
-      "quantity": 1
+      "quantity": 2
     },
     {
       "title": "Healing Herbs",
@@ -87,6 +87,14 @@
       "img": "/img/shield.png",
       "id": 3,
       "quantity": 1
+    },
+    {
+      "title": "Poison Hammer",
+      "price": 100,
+      "description": "Hammer infused with posion gem magic.",
+      "img": "/img/hammer.png",
+      "id": 2,
+      "quantity": 5
     }
   ],
   "products": [
