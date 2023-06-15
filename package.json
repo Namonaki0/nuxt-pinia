@@ -12,6 +12,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@types/node": "^18",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.5.2",
     "postcss": "^8.4.24",
